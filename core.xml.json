@@ -1,0 +1,47 @@
+[
+  {
+    "name": "created",
+    "path": ["cp:coreProperties","dcterms:created", 0, "_"],
+    "type": "string"
+  },
+  {
+    "name": "createdBy",
+    "path": ["cp:coreProperties", "dc:creator"],
+    "type": "string"
+  },
+  {
+    "name": "comments",
+    "path": ["cp:coreProperties", "dc:description"],
+    "type": "string"
+  },
+  {
+    "name": "keywords",
+    "path": ["cp:coreProperties", "cp:keywords"],
+    "type": "string"
+  },
+  {
+    "name": "modified",
+    "path": ["cp:coreProperties","dcterms:modified", 0, "_"],
+    "type": "string"
+  },
+  {
+    "name": "modifiedBy",
+    "path": ["cp:coreProperties", "cp:lastModifiedBy"],
+    "type": "string"
+  },
+  {
+    "name": "revision",
+    "path": ["cp:coreProperties", "cp:revision"],
+    "type": "number"
+  },
+  {
+    "name": "subject",
+    "path": ["cp:coreProperties", "dc:subject"],
+    "type": "string"
+  },
+  {
+    "name": "title",
+    "path": ["cp:coreProperties", "dc:title"],
+    "type": "string"
+  }
+]

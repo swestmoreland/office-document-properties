@@ -1,0 +1,62 @@
+[
+  {
+    "name": "application",
+    "path": ["Properties", "Application"],
+    "type": "string"
+  },
+  {
+    "name": "applicationVersion",
+    "path": ["Properties", "AppVersion"],
+    "type": "string"
+  },
+  {
+    "name": "characters",
+    "path": ["Properties", "Characters"],
+    "type": "number"
+  },
+  {
+    "name": "company",
+    "path": ["Properties", "Company"],
+    "type": "string"
+  },
+  {
+    "name": "manager",
+    "path": ["Properties", "Manager"],
+    "type": "string"
+  },
+  {
+    "name": "notes",
+    "path": ["Properties", "Notes"],
+    "type": "number"
+  },
+  {
+    "name": "pages",
+    "path": ["Properties", "Pages"],
+    "type": "number"
+  },
+  {
+    "name": "paragraphs",
+    "path": ["Properties", "Paragraphs"],
+    "type": "number"
+  },
+  {
+    "name": "slides",
+    "path": ["Properties", "Slides"],
+    "type": "number"
+  },
+  {
+    "name": "template",
+    "path": ["Properties", "Template"],
+    "type": "string"
+  },
+  {
+    "name": "totalTime",
+    "path": ["Properties", "TotalTime"],
+    "type": "number"
+  },
+  {
+    "name": "words",
+    "path": ["Properties", "Words"],
+    "type": "number"
+  }
+]
