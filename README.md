@@ -1,19 +1,34 @@
 # office-document-properties
 
-Parse document properties for Microsoft Office Open XML documents (docx, pptx, xlsx) with node.
+Parse document properties for Microsoft Office Open XML documents (docx, pptx, xlsx).
 
 ## Installation
 
-```
+```sh
 npm install office-document-properties
 ```
 
-### Usage
+## Usage
 
-```javascript
+### Import
+
+```js
 var msoprops = require('office-document-properties');
+```
 
-msoprops.fromFile(filePath, function(err, data){
+### From File
+
+```js
+msoprops.fromFilePath(filePath, function(err, data){
+  if (err) throw err;
+  console.log(data);
+});
+```
+
+### From Buffer
+
+```js
+msoprops.fromBuffer(buffer, function(err, data){
   if (err) throw err;
   console.log(data);
 });
