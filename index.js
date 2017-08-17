@@ -4,7 +4,7 @@ var _ = require('lodash')
   ;
 
 var APP_XML = require('./app.xml.json')
-  , CORE_XML = require('./app.xml.json')
+  , CORE_XML = require('./core.xml.json')
   ;
 
 function fromBuffer(buffer, cb) {
