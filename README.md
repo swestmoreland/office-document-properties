@@ -1,6 +1,6 @@
 # office-document-properties
 
-Parse document properties for Microsoft Office Open XML documents (docx, pptx, xlsx).
+Use this module to read document properties from Microsoft Office Open XML documents (docx, docm, pptx, pptm, xlsx, xlsm).
 
 ## Installation
 
@@ -13,13 +13,13 @@ npm install office-document-properties
 ### Import
 
 ```js
-var msoprops = require('office-document-properties');
+var getOfficeProps = require('office-document-properties');
 ```
 
-### From File
+### Read Properties from File
 
 ```js
-msoprops.fromFilePath(filePath, function(err, data){
+getOfficeProps.fromFilePath(filePath, function(err, data){
   if (err) throw err;
   console.log(data);
   /*
@@ -30,9 +30,9 @@ msoprops.fromFilePath(filePath, function(err, data){
     company: 'Acme',
     created: '2017-08-17T20:34:00Z',
     createdBy: 'Steven Westmoreland',
-    keywords: 'Example, Template, MLA',
+    keywords: 'example',
     modified: '2017-08-17T20:37:00Z',
-    modifiedBy: 'Microsoft Office User',
+    modifiedBy: 'Steven Westmoreland',
     pages: 4,
     paragraphs: 32,
     revision: 1,
@@ -46,10 +46,10 @@ msoprops.fromFilePath(filePath, function(err, data){
 });
 ```
 
-### From Buffer
+### Read Properties from Buffer
 
 ```js
-msoprops.fromBuffer(buffer, function(err, data){
+getOfficeProps.fromBuffer(buffer, function(err, data){
   if (err) throw err;
   console.log(data);
 });

@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "homepage": "https://github.com/swestmoreland/office-document-properties",
   "author": "Steven Westmoreland",
-  "description": "Parse document properties for Microsoft Office Open XML documents (docx, pptx, xlsx).",
+  "description": "Read document properties from Microsoft Office Open XML documents.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/swestmoreland/office-document-properties.git"
