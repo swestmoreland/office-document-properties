@@ -1,6 +1,6 @@
-# office-document-properties
+# office-document-properties [![npm version](https://badge.fury.io/js/office-document-properties.svg)](https://badge.fury.io/js/office-document-properties)
 
-Use this module to read document properties from Microsoft Office Open XML documents (docx, docm, pptx, pptm, xlsx, xlsm).
+Use this node module to read document properties from Microsoft Office Open XML documents (docx, docm, pptx, pptm, xlsx, xlsm).
 
 ## Installation
 
