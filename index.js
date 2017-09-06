@@ -14,13 +14,22 @@ function fromBuffer(buffer, cb) {
     yauzl.fromBuffer(buffer, {lazyEntries: true}, function(err, zipfile) {
 
       if (err) {
-        cb(err, null);
+        cb(err);
         return;
       }
 
       readEntries(zipfile, cb);
 
     });
+
+  } else {
+
+    if( typeof cb === 'function' ) {
+      cb( new Error('Incorrect parameters.') );
+    } else {
+      // eslint-disable-next-line no-console
+      console.error('Incorrect parameters.');
+    }
 
   }
 
@@ -33,13 +42,22 @@ function fromFilePath(filePath, cb) {
     yauzl.open(filePath, {lazyEntries: true}, function(err, zipfile) {
 
       if (err) {
-        cb(err, null);
+        cb(err);
         return;
       }
 
       readEntries(zipfile, cb);
 
     });
+
+  } else {
+
+    if( typeof cb === 'function' ) {
+      cb( new Error('Incorrect parameters.') );
+    } else {
+      // eslint-disable-next-line no-console
+      console.error('Incorrect parameters.');
+    }
 
   }
 
@@ -81,23 +99,23 @@ function readEntryStreamXML(zipfile, entry, cb) {
 
   zipfile.openReadStream(entry, function(err, readStream) {
 
-    var text = '';
+    var data = '';
 
     if (err) {
-      cb(err, null);
+      cb(err);
       return;
     }
 
     readStream.on('data', function(chunk) {
-      text += chunk;
+      data += chunk;
     });
 
     readStream.on('end', function() {
 
-      parseString(text, function(err, result) {
+      parseString(data, function(err, result) {
 
         if (err) {
-          cb(err, null);
+          cb(err);
           return;
         }
 
