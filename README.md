@@ -13,13 +13,13 @@ npm install office-document-properties
 ### Import
 
 ```js
-var getOfficeProps = require('office-document-properties');
+var getDocumentProps = require('office-document-properties');
 ```
 
-### Read Properties from File
+### Read Document Properties from File
 
 ```js
-getOfficeProps.fromFilePath(filePath, function(err, data){
+getDocumentProps.fromFilePath(filePath, function(err, data){
   if (err) throw err;
   console.log(data);
   /*
@@ -46,10 +46,10 @@ getOfficeProps.fromFilePath(filePath, function(err, data){
 });
 ```
 
-### Read Properties from Buffer
+### Read Document Properties from Buffer
 
 ```js
-getOfficeProps.fromBuffer(buffer, function(err, data){
+getDocumentProps.fromBuffer(buffer, function(err, data){
   if (err) throw err;
   console.log(data);
 });
