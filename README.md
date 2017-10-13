@@ -19,7 +19,7 @@ var getDocumentProperties = require('office-document-properties');
 ### Read Document Properties from File
 
 ```js
-getDocumentProperties.fromFilePath(filePath, function(err, data){
+getDocumentProperties.fromFilePath(filePath, function(err, data) {
   if (err) throw err;
   console.log(data);
   /*
@@ -45,13 +45,13 @@ getDocumentProperties.fromFilePath(filePath, function(err, data){
     words: 5
   }
   */
-});
+})
 ```
 
 ### Read Document Properties from Buffer
 
 ```js
-getDocumentProperties.fromBuffer(buffer, function(err, data){
+getDocumentProperties.fromBuffer(buffer, function(err, data) {
   if (err) throw err;
   console.log(data);
   /*
@@ -76,5 +76,5 @@ getDocumentProperties.fromBuffer(buffer, function(err, data){
     words: 8
   }
   */
-});
+})
 ```
