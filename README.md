@@ -1,16 +1,23 @@
-# office-document-properties
+<h3 align="center">office-document-properties</h3>
 
-[![npm](https://img.shields.io/npm/v/office-document-properties.svg?style=flat)](https://www.npmjs.com/package/office-document-properties)
-[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/swestmoreland/office-document-properties/blob/master/LICENSE)
-[![GitHub](https://img.shields.io/github/stars/swestmoreland/office-document-properties.svg?style=social&logo=github&label=Stars)](https://github.com/swestmoreland/office-document-properties/)
-[![Twitter](https://img.shields.io/twitter/follow/swestmoreland.svg?style=social&logo=twitter&label=Follow)](https://twitter.com/intent/follow?screen_name=swestmoreland)
+<p align="center">Read document properties from Microsoft Office Open XML documents.</p>
 
-Use this node module to read document properties from Microsoft Office Open XML documents (docx, docm, pptx, pptm, xlsx, xlsm).
+<p align="center">
+  <a href="https://badge.fury.io/js/office-document-properties">
+    <img src="https://badge.fury.io/js/office-document-properties.svg" alt="npm version badge">
+  </a>
+</p>
+
+## Introduction
+
+Use this node module to read document properties and metadata from Microsoft Office Open XML documents (docx, docm, pptx, pptm, xlsx, xlsm).
 
 ## Installation
 
+To install via npm:
+
 ```sh
-npm install office-document-properties
+npm install office-document-properties --save
 ```
 
 ## Usage
