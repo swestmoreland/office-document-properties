@@ -1,3 +1,9 @@
+//
+// office-document-properties
+// https://github.com/swestmoreland/office-document-properties
+//
+"use strict";
+
 var _     = require('lodash'),
     parse = require('xml2js').parseString,
     yauzl = require('yauzl');
@@ -144,7 +150,7 @@ function getDocumentProperties(obj, props) {
 
 }
 
-sortByKeys = object => {
+var sortByKeys = object => {
     const keys = Object.keys(object)
     const sortedKeys = _.sortBy(keys)
 
