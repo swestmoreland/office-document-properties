@@ -1,6 +1,6 @@
 {
   "name": "office-document-properties",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "homepage": "https://stevenwestmoreland.com/projects/office-document-properties.html",
   "author": "Steven Westmoreland",
   "description": "Read document properties from Microsoft Office Open XML documents.",
